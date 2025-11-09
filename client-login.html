@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login - IMS</title>
+    <link rel="stylesheet" href="client-css/client-login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="login-header">
+                <div class="logo">
+                    <h1>IMS</h1>
+                    <span>Staff Portal</span>
+                </div>
+            </div>
+            
+            <div class="login-form-container">
+                <h2>Staff Login</h2>
+                <p>Sign in to access the staff dashboard</p>
+                
+                <!-- Added ID for JS -->
+                <form class="login-form" id="clientLoginForm" novalidate>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <small class="error-message" id="emailError"></small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password">
+                        <small class="error-message" id="passwordError"></small>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+                
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="client-create-account.html">Create Account</a></p>
+                    <a href="index.html" class="back-link">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="JS Validation/client-login.js"></script>
+</html>

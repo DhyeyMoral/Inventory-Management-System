@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Staff Account - IMS</title>
+    <link rel="stylesheet" href="client-css/client-create-account.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-wrapper">
+            <div class="signup-header">
+                <div class="logo">
+                    <h1>IMS</h1>
+                    <span>Staff Portal</span>
+                </div>
+            </div>
+            
+            <div class="signup-form-container">
+                <h2>Create Staff Account</h2>
+                <p>Set up your staff account to access inventory</p>
+                
+                <!-- Added ID for JS and disabled native validation -->
+                <form class="signup-form" id="clientCreateForm" novalidate>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter username">
+                        <small class="error-message" id="usernameError"></small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email">
+                        <small class="error-message" id="emailError"></small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter password">
+                        <small class="error-message" id="passwordError"></small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password">
+                        <small class="error-message" id="confirmPasswordError"></small>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </div>
+                </form>
+                
+                <div class="form-footer">
+                    <p>Already have an account? <a href="client-login.html">Login</a></p>
+                    <a href="index.html" class="back-link">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="JS Validation/client-create-account.js"></script>
+</html>
